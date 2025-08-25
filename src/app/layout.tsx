@@ -11,6 +11,7 @@ export default function RootLayout({
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [currentSection, setCurrentSection] = useState("first");
+  const [menuOpen, setMenuOpen] = useState(false);
   const mouseTimeout = useRef<NodeJS.Timeout | null>(null);
 
   // Show nav when scrolling up or at top of page, hide otherwise
@@ -72,8 +73,9 @@ export default function RootLayout({
           className={`fixed top-0 left-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNav ? "translate-y-0" : "-translate-y-full"}`}
         >
           <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <h1 className="font-bold text-lg">Your Company</h1>
-            <ul className="flex space-x-4">
+            <span className="font-bold text-lg text-nowrap">Your Company</span>
+            {/* Desktop icons */}
+            <ul className="hidden md:flex space-x-4">
               <li>
                 <a href="#first" className={linkClass("first")}>
                   Home
@@ -95,7 +97,51 @@ export default function RootLayout({
                 </a>
               </li>
             </ul>
+            {/* Hamburger button */}
+            <button
+              className="md:hidden flex flex-col justify-center items-center w-8 h-8 relative"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {/* Top line */}
+              <span
+                className={`block absolute w-6 h-0.5 bg-black transition-transform duration-300 ease-in-out
+                  ${menuOpen ? "rotate-45 top-1/2 -translate-y-1/2" : "top-1/4"}`}
+              ></span>
+
+              {/* Middle line */}
+              <span
+                className={`block absolute w-6 h-0.5 bg-black transition-opacity duration-300 ease-in-out
+                  ${menuOpen ? "opacity-0" : "top-1/2 -translate-y-1/2"}`}
+              ></span>
+
+              {/* Bottom line */}
+              <span
+                className={`block absolute w-6 h-0.5 bg-black transition-transform duration-300 ease-in-out
+                  ${menuOpen ? "-rotate-45 top-1/2 -translate-y-1/2" : "top-3/4"}`}
+              ></span>
+            </button>
           </div>
+          {/* Mobile menu */}
+          <div
+            className={`md:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out
+              ${menuOpen ? "max-h-96" : "max-h-0"}`}
+          >
+            <ul className="flex flex-col bg-white w-full px-4 pb-4 space-y-2">
+              <li>
+                <a href="#first" className={linkClass("first")} onClick={() => setMenuOpen(false)}>Home</a>
+              </li>
+              <li>
+                <a href="#second" className={linkClass("second")} onClick={() => setMenuOpen(false)}>About</a>
+              </li>
+              <li>
+                <a href="#third" className={linkClass("third")} onClick={() => setMenuOpen(false)}>Contact</a>
+              </li>
+              <li>
+                <a href="#fourth" className={linkClass("fourth")} onClick={() => setMenuOpen(false)}>Extra</a>
+              </li>
+            </ul>
+          </div>
+          
         </nav>
         {children}
       </body>

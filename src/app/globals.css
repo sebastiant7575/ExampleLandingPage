@@ -11,7 +11,7 @@ body {
   --color-offwhite: #FEFAE0;
   --color-lightgreen: #606C38;
   /* indigo-500 */
-  --color-darkgreen: oklch(58.5% 0.233 277.117); 
+  --color-indigo: oklch(58.5% 0.233 277.117); 
   --color-lightbrown: #DDA15E;
   --color-darkbrown: '#BC6C25';
 }
