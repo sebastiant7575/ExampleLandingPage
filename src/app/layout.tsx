@@ -2,6 +2,7 @@
 
 import "./globals.css";
 import { useEffect, useRef, useState } from "react";
+import '@fontsource-variable/roboto';
 
 export default function RootLayout({
   children,
@@ -73,7 +74,7 @@ export default function RootLayout({
           className={`fixed top-0 left-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNav ? "translate-y-0" : "-translate-y-full"}`}
         >
           <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <span className="font-bold text-lg text-nowrap">Your Company</span>
+            <span className="font-bold text-lg md:text-2xl text-nowrap">Your Company</span>
             {/* Desktop icons */}
             <ul className="hidden md:flex space-x-4">
               <li>
