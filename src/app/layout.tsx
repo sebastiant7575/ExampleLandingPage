@@ -29,7 +29,7 @@ export default function RootLayout({
       }
       setLastScrollY(currentY);
 
-      for (let id of sectionIds) {
+      for (const id of sectionIds) {
         const el = document.getElementById(id);
         if (el) {
           const rect = el.getBoundingClientRect();
