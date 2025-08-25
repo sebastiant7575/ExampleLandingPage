@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-  font-family: 'Calibri', 'Trebuchet MS', sans-serif, monospace, sans-serif;
+  font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI", 'Optima', Arial, sans-serif;
 }
 
 @layer base {
