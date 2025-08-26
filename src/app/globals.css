@@ -4,15 +4,22 @@ body {
   /* font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI", 'Optima', Arial, sans-serif; */
   font-family: 'Roboto Variable', sans-serif;
 }
-
+ /*  */
 @layer base {
+    h1 {    
+      font-size: var(--text-5xl);  
+    }
+    h2 {
+      font-size: var(--text-4xl); 
+    }
 }
 
 @theme {
-  --color-offwhite: #FEFAE0;
-  --color-lightgreen: #606C38;
+  --color-primary: #f7f7f7;
+  /* --color-background: #FEFAE0; */
+  /* --color-secondary: #000000; */
   /* indigo-500 */
-  --color-indigo: oklch(58.5% 0.233 277.117); 
-  --color-lightbrown: #DDA15E;
-  --color-darkbrown: '#BC6C25';
+  --color-accent: oklch(58.5% 0.233 277.117);
+  /* indigo-400 */
+  --color-accent-light: oklch(67.3% 0.182 276.935)
 }

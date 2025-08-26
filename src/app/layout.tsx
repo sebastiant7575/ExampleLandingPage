@@ -63,44 +63,62 @@ export default function RootLayout({
   }, [lastScrollY]);
 
   const linkClass = (id: string) =>
-    `hover:underline ${currentSection === id ? "font-bold" : ""}`
+    `${currentSection === id ? "font-bold" : ""} relative group`
 
   return (
     <html lang="en" className="!scroll-smooth snap-y snap-mandatory">
       <body
         className={`antialiased`}
       >
+      {/* Nav section has to be kept here for responsive/dynamic mouse reaction */}
       <nav
           className={`fixed top-0 left-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNav ? "translate-y-0" : "-translate-y-full"}`}
         >
           <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <span className="font-bold text-lg md:text-2xl text-nowrap">Your Company</span>
+            <span className="font-bold text-lg md:text-2xl text-nowrap">
+              <a href="#first" className="group"> 
+                Your Company
+              </a>
+            </span>
             {/* Desktop icons */}
-            <ul className="hidden md:flex space-x-4">
+            <ul className="hidden sm:flex space-x-4">
               <li>
                 <a href="#first" className={linkClass("first")}>
                   Home
+                  <span
+                    className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </a>
               </li>
               <li>
                 <a href="#second" className={linkClass("second")}>
                   About
+                  <span
+                    className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </a>
+                
               </li>
               <li>
                 <a href="#third" className={linkClass("third")}>
                   Contact 
+                  <span
+                    className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </a>
               </li>
               <li>
                 <a href="#fourth" className={linkClass("fourth")}>
                   Footer
+                  <span
+                    className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </a>
               </li>
             </ul>
             {/* Hamburger button */}
             <button
-              className="md:hidden flex flex-col justify-center items-center w-8 h-8 relative"
+              className="sm:hidden flex flex-col justify-center items-center w-8 h-8 relative"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {/* Top line */}
@@ -124,7 +142,7 @@ export default function RootLayout({
           </div>
           {/* Mobile menu */}
           <div
-            className={`md:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out
+            className={`sm:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out
               ${menuOpen ? "max-h-96" : "max-h-0"}`}
           >
             <ul className="flex flex-col bg-white w-full px-4 pb-4 space-y-2">
