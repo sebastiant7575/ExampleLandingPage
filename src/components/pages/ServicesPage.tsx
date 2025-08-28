@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const ServicesPage = () => {
   return (      
-    <div id="second" className="min-h-screen lg:max-h-screen flex flex-col items-center justify-center bg-accent text-white">
+    <div id="services" className="min-h-screen lg:max-h-screen flex flex-col items-center justify-center bg-accent text-white">
       <div className="px-12 pb-12 lg:pb-0 sm:mt-12 lg:mt-6">
           <p className="mx-auto mt-8 lg:mt-0 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
             <span className="underline">Everything</span> you need to market your product
@@ -40,7 +40,7 @@ const ServicesPage = () => {
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10 group">
                   <p className="mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">Performance</p>
                   <p className="relative mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
-                    Our sites load FAST, so everyone can access and view your product.
+                    Our sites load FAST, so everyone can access and view your product instantly.
                     <span
                       className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
                     ></span>
@@ -99,7 +99,7 @@ const ServicesPage = () => {
                   </p>
                 </div>
                 <div className="relative min-h-120 w-full grow">
-                  <div className="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-600/60 outline outline-white/10">
+                  <div className="absolute top-10 right-10 bottom-[1px] left-10 overflow-hidden rounded-t-xl bg-gray-600/60 outline outline-white/10">
                     <Image
                       src="/moderndesign.jpeg"
                       alt="Modern design"
