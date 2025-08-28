@@ -10,18 +10,19 @@ export const metadata: Metadata = {
 export default function Home() {
 
   return (
-    <div id="home" className="">
+    <div>
       {/* Hero Page*/}
       <HeroPage />
       {/* Services */}
       <ServicesPage />
       {/* About Us */}
-      <div id="about" className="h-[50vh] flex flex-col items-center justify-center bg-primary text-black">
+      <div id="third" className="h-screen flex flex-col items-center justify-center bg-primary text-black">
         <h2 className="font-bold text-balance">About Us</h2>
         {/* <p className="mt-2 text-pretty">Scroll Down</p> */}
       </div>
       {/* Service Highlights */}
-      <div id="fourth" className="h-[50vh] px-48 grid grid-cols-2 bg-accent text-white">
+      <div id="fourth" className="h-screen flex flex-col items-center justify-center bg-accent text-white">
+        <h2 className="font-bold text-balance">Contact Us</h2>
         {/* <div className="">
           <h2 className="font-bold text-balance underline">Your Company</h2>
         </div>

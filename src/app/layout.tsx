@@ -11,7 +11,7 @@ export default function RootLayout({
 }>) {
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [currentSection, setCurrentSection] = useState("first");
+  const [currentSection, setCurrentSection] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
   const mouseTimeout = useRef<NodeJS.Timeout | null>(null);
 
@@ -66,7 +66,7 @@ export default function RootLayout({
     `${currentSection === id ? "font-bold" : ""} relative group`
 
   return (
-    <html lang="en" className="!scroll-smooth snap-y snap-mandatory">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={`antialiased`}
       >
@@ -76,14 +76,14 @@ export default function RootLayout({
         >
           <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <span className="font-bold text-lg md:text-2xl text-nowrap">
-              <a href="#home" className="group"> 
+              <a href="#first" className="group"> 
                 Your Company
               </a>
             </span>
             {/* Desktop icons */}
             <ul className="hidden sm:flex space-x-4">
               <li>
-                <a href="#home" className={linkClass("home")}>
+                <a href="#first" className={linkClass("first")}>
                   Home
                   <span
                     className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
@@ -91,7 +91,7 @@ export default function RootLayout({
                 </a>
               </li>
               <li>
-                <a href="#services" className={linkClass("services")}>
+                <a href="#second" className={linkClass("second")}>
                   Services
                   <span
                     className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
@@ -100,7 +100,7 @@ export default function RootLayout({
                 
               </li>
               <li>
-                <a href="#about" className={linkClass("about")}>
+                <a href="#third" className={linkClass("third")}>
                   About 
                   <span
                     className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
@@ -147,20 +147,19 @@ export default function RootLayout({
           >
             <ul className="flex flex-col bg-white w-full px-4 pb-4 space-y-2">
               <li>
-                <a href="#home" className={linkClass("home")} onClick={() => setMenuOpen(false)}>Home</a>
+                <a href="#first" className={linkClass("first")} onClick={() => setMenuOpen(false)}>Home</a>
               </li>
               <li>
-                <a href="#services" className={linkClass("services")} onClick={() => setMenuOpen(false)}>Services</a>
+                <a href="#second" className={linkClass("second")} onClick={() => setMenuOpen(false)}>Services</a>
               </li>
               <li>
-                <a href="#about" className={linkClass("about")} onClick={() => setMenuOpen(false)}>About</a>
+                <a href="#third" className={linkClass("third")} onClick={() => setMenuOpen(false)}>About</a>
               </li>
               <li>
                 <a href="#fourth" className={linkClass("fourth")} onClick={() => setMenuOpen(false)}>Contact</a>
               </li>
             </ul>
           </div>
-          
         </nav>
         {children}
       </body>

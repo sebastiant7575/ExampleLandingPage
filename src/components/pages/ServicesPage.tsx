@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const ServicesPage = () => {
   return (      
-    <div id="services" className="min-h-screen lg:max-h-screen flex flex-col items-center justify-center bg-accent text-white">
+    <div id="second" className="min-h-screen lg:max-h-screen flex flex-col items-center justify-center bg-accent text-white">
       <div className="px-12 pb-12 lg:pb-0 sm:mt-12 lg:mt-6">
           <p className="mx-auto mt-8 lg:mt-0 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
             <span className="underline">Everything</span> you need to market your product
