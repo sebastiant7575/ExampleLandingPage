@@ -76,14 +76,14 @@ export default function RootLayout({
         >
           <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <span className="font-bold text-lg md:text-2xl text-nowrap">
-              <a href="#first" className="group"> 
+              <a href="#home" className="group"> 
                 Your Company
               </a>
             </span>
             {/* Desktop icons */}
             <ul className="hidden sm:flex space-x-4">
               <li>
-                <a href="#first" className={linkClass("first")}>
+                <a href="#home" className={linkClass("home")}>
                   Home
                   <span
                     className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
@@ -91,8 +91,8 @@ export default function RootLayout({
                 </a>
               </li>
               <li>
-                <a href="#second" className={linkClass("second")}>
-                  About
+                <a href="#services" className={linkClass("services")}>
+                  Services
                   <span
                     className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
                   ></span>
@@ -100,8 +100,8 @@ export default function RootLayout({
                 
               </li>
               <li>
-                <a href="#third" className={linkClass("third")}>
-                  Contact 
+                <a href="#about" className={linkClass("about")}>
+                  About 
                   <span
                     className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
                   ></span>
@@ -109,7 +109,7 @@ export default function RootLayout({
               </li>
               <li>
                 <a href="#fourth" className={linkClass("fourth")}>
-                  Footer
+                  Contact
                   <span
                     className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
                   ></span>
@@ -147,16 +147,16 @@ export default function RootLayout({
           >
             <ul className="flex flex-col bg-white w-full px-4 pb-4 space-y-2">
               <li>
-                <a href="#first" className={linkClass("first")} onClick={() => setMenuOpen(false)}>Home</a>
+                <a href="#home" className={linkClass("home")} onClick={() => setMenuOpen(false)}>Home</a>
               </li>
               <li>
-                <a href="#second" className={linkClass("second")} onClick={() => setMenuOpen(false)}>About</a>
+                <a href="#services" className={linkClass("services")} onClick={() => setMenuOpen(false)}>Services</a>
               </li>
               <li>
-                <a href="#third" className={linkClass("third")} onClick={() => setMenuOpen(false)}>Contact</a>
+                <a href="#about" className={linkClass("about")} onClick={() => setMenuOpen(false)}>About</a>
               </li>
               <li>
-                <a href="#fourth" className={linkClass("fourth")} onClick={() => setMenuOpen(false)}>Extra</a>
+                <a href="#fourth" className={linkClass("fourth")} onClick={() => setMenuOpen(false)}>Contact</a>
               </li>
             </ul>
           </div>
