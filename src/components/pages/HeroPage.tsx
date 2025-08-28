@@ -1,6 +1,7 @@
 const HeroPage = () => {
   return (
-  	<div className="h-screen flex flex-col items-center justify-center bg-primary">
+  	<div className="h-screen bg-[url('/graph-paper.svg')] text-accent bg-repeat bg-[length:50px_50px] flex flex-col items-center justify-center bg-primary">
+      <div className="absolute inset-0 bg-white/80"></div>
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
