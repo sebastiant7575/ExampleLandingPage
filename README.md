@@ -24,3 +24,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 -Add prettier with tailwindcss support
 -Update mobile menu to be larger and more mobile-friendly
 -Add robot.txt
+-Add shadcn and create a shadcn carousel for gallery images
