@@ -1,9 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This project uses NextJS (A framework for React) and Tailwindcss 
 
 ## Getting Started
 
 Install node (nvm recommended)
 
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
 Run the development server:
 
 ```bash
@@ -20,7 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## TODO
 
--Remove animated purple lines on card hover -> maybe move to under subheaders
 -Add prettier with tailwindcss support
 -Update mobile menu to be larger and more mobile-friendly
 -Add robot.txt
