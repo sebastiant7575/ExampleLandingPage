@@ -1,9 +1,9 @@
 const HeroPage = () => {
   return (
-  	<div id="first" className="relative min-h-screen bg-[url('/graph-paper.svg')] text-accent bg-repeat bg-[length:50px_50px] flex flex-col items-center justify-center bg-primary">
+  	<div id="first" className="relative min-h-[75vh] bg-[url('/graph-paper.svg')] text-accent bg-repeat bg-[length:50px_50px] flex flex-col items-center justify-center bg-primary">
       <div className="absolute inset-0 bg-white/80"></div>
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-8">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm/6 text-black ring-1 ring-black/30 hover:ring-black/70">
               Announcing our latest designs.&nbsp;
