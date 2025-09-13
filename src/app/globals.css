@@ -2,19 +2,19 @@
 
 body {
   /* font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI", 'Optima', Arial, sans-serif; */
-  font-family: 'Roboto Variable', sans-serif;
+  font-family: "Roboto Variable", sans-serif;
 }
- /*  */
+/*  */
 @layer base {
-    h1 {    
-      font-size: var(--text-5xl);  
-    }
-    h2 {
-      font-size: var(--text-4xl); 
-    }
-    h3 {
-      font-size: var(--text-2xl);
-    }
+  h1 {
+    font-size: var(--text-5xl);
+  }
+  h2 {
+    font-size: var(--text-4xl);
+  }
+  h3 {
+    font-size: var(--text-2xl);
+  }
 }
 
 @theme {
@@ -24,5 +24,5 @@ body {
   /* indigo-500 */
   --color-accent: oklch(58.5% 0.233 277.117);
   /* indigo-400 */
-  --color-accent-light: oklch(67.3% 0.182 276.935)
+  --color-accent-light: oklch(67.3% 0.182 276.935);
 }
