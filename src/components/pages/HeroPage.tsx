@@ -1,7 +1,7 @@
 const HeroPage = () => {
   return (
     <div
-      id="first"
+      id="hero"
       className="
         relative 
         min-h-[75vh] 

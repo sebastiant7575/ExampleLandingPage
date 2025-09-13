@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
 import "./globals.css";
 import { useEffect, useRef, useState } from "react";
-import '@fontsource-variable/roboto';
+import "@fontsource-variable/roboto";
 
 export default function RootLayout({
   children,
@@ -17,7 +17,15 @@ export default function RootLayout({
 
   // Show nav when scrolling up or at top of page, hide otherwise
   useEffect(() => {
-    const sectionIds = ["first", "second", "third", "fourth"];
+    const sectionIds = [
+      "hero",
+      "services",
+      "about",
+      "service-highlights",
+      "gallery",
+      "pricing",
+      "footer",
+    ];
     const handleScroll = () => {
       const currentY = window.scrollY;
 
@@ -34,7 +42,10 @@ export default function RootLayout({
         const el = document.getElementById(id);
         if (el) {
           const rect = el.getBoundingClientRect();
-          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          if (
+            rect.top <= window.innerHeight / 2 &&
+            rect.bottom >= window.innerHeight / 2
+          ) {
             setCurrentSection(id);
             break;
           }
@@ -49,8 +60,7 @@ export default function RootLayout({
         if (mouseTimeout.current) clearTimeout(mouseTimeout.current);
         // Hide navbar again after 2 seconds if mouse leaves top
         mouseTimeout.current = setTimeout(() => setShowNav(false), 2000);
-      } 
-
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -59,60 +69,49 @@ export default function RootLayout({
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("mousemove", handleMouseMove);
       if (mouseTimeout.current) clearTimeout(mouseTimeout.current);
-    }
+    };
   }, [lastScrollY]);
 
   const linkClass = (id: string) =>
-    `${currentSection === id ? "font-bold" : ""} relative group`
+    `${currentSection === id ? "font-bold" : ""} relative group`;
 
   return (
     <html lang="en" className="!scroll-smooth">
-      <body
-        className={`antialiased`}
-      >
-      {/* Nav section has to be kept here for responsive/dynamic mouse reaction */}
-      <nav
+      <body className={`antialiased`}>
+        {/* Nav section has to be kept here for responsive/dynamic mouse reaction */}
+        <nav
           className={`fixed top-0 left-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNav ? "translate-y-0" : "-translate-y-full"}`}
         >
           <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <span className="font-bold text-lg md:text-2xl text-nowrap">
-              <a href="#first" className="group"> 
+              <a href="#hero" className="group">
                 Your Company
               </a>
             </span>
             {/* Desktop icons */}
             <ul className="hidden sm:flex space-x-4">
               <li>
-                <a href="#first" className={linkClass("first")}>
+                <a href="#hero" className={linkClass("hero")}>
                   Home
-                  <span
-                    className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
-                  ></span>
+                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
               <li>
-                <a href="#second" className={linkClass("second")}>
+                <a href="#services" className={linkClass("services")}>
                   Services
-                  <span
-                    className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
-                  ></span>
-                </a>
-                
-              </li>
-              <li>
-                <a href="#third" className={linkClass("third")}>
-                  About 
-                  <span
-                    className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
-                  ></span>
+                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
               <li>
-                <a href="#fourth" className={linkClass("fourth")}>
-                  Contact
-                  <span
-                    className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"
-                  ></span>
+                <a href="#about" className={linkClass("about")}>
+                  About
+                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#gallery" className={linkClass("gallery")}>
+                  Gallery
+                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             </ul>
@@ -147,16 +146,40 @@ export default function RootLayout({
           >
             <ul className="flex flex-col bg-white w-full px-4 pb-4 space-y-2">
               <li>
-                <a href="#first" className={linkClass("first")} onClick={() => setMenuOpen(false)}>Home</a>
+                <a
+                  href="#hero"
+                  className={linkClass("hero")}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#second" className={linkClass("second")} onClick={() => setMenuOpen(false)}>Services</a>
+                <a
+                  href="#services"
+                  className={linkClass("services")}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Services
+                </a>
               </li>
               <li>
-                <a href="#third" className={linkClass("third")} onClick={() => setMenuOpen(false)}>About</a>
+                <a
+                  href="#about"
+                  className={linkClass("about")}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a href="#fourth" className={linkClass("fourth")} onClick={() => setMenuOpen(false)}>Contact</a>
+                <a
+                  href="#gallery"
+                  className={linkClass("gallery")}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Gallery
+                </a>
               </li>
             </ul>
           </div>
