@@ -3,7 +3,7 @@ import Image from "next/image";
 const ServicesPage = () => {
   return (
     <div
-      id="second"
+      id="services"
       className="min-h-screen flex flex-col items-center justify-center bg-accent text-white"
     >
       <div className="px-12 pb-12 lg:pb-0 sm:mt-12 lg:mt-6">

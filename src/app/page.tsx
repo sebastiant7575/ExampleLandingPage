@@ -16,7 +16,7 @@ export default function Home() {
       <ServicesPage />
       {/* About Us */}
       <div
-        id="third"
+        id="about"
         className="h-[50vh] flex flex-col items-center justify-center bg-primary text-black"
       >
         <h2 className="font-bold text-balance">About Us</h2>
@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       {/* Service Highlights */}
       <div
-        id="fourth"
+        id="service-highlights"
         className="h-screen flex flex-col items-center justify-center bg-accent text-white"
       >
         <h2 className="font-bold text-balance">Service Highlights</h2>
@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       {/* Gallery wth example sites */}
       <div
-        id="fifth"
+        id="gallery"
         className="h-[50vh] flex flex-col items-center justify-center bg-primary text-black"
       >
         <h2 className="font-bold text-balance">Gallery</h2>
@@ -42,7 +42,7 @@ export default function Home() {
       </div>
       {/* Pricing / Buy / Contact Us (Call to Action) */}
       <div
-        id="sixth"
+        id="pricing"
         className="min-h-screen flex flex-col items-center justify-center bg-accent text-white"
       >
         <h2 className="font-bold text-balance">Pricing</h2>
@@ -70,7 +70,7 @@ export default function Home() {
       </div> */}
       {/* Footer */}
       <div
-        id="seventh"
+        id="footer"
         className="h-screen flex flex-col items-center justify-center bg-primary text-white"
       >
         <h2 className="font-bold text-balance">Footer</h2>
