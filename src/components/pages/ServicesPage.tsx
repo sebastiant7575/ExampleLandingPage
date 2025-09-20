@@ -4,14 +4,14 @@ const ServicesPage = () => {
   return (
     <div
       id="services"
-      className="min-h-screen flex flex-col items-center justify-center bg-accent text-white"
+      className="flex flex-col items-center justify-center bg-accent text-white"
     >
-      <div className="px-12 pb-12 lg:pb-0 sm:mt-12 lg:mt-6">
+      <div className="px-12 pb-12 py-12">
         <p className="mx-auto mt-8 lg:mt-0 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
           <span className="underline">Everything</span> you need to market your
           product
         </p>
-        <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+        <div className="mt-16 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="group relative lg:row-span-2 rounded-lg lg:rounded-l-4xl transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
             <div className="absolute inset-px rounded-lg bg-primary lg:rounded-l-4xl"></div>
             <div className="relative flex h-[450px] lg:h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)] shadow-md">
