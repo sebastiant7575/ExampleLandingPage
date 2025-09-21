@@ -15,10 +15,9 @@ const ServicesPage = () => {
           <div className="group relative lg:row-span-2 rounded-lg lg:rounded-l-4xl transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
             <div className="absolute inset-px rounded-lg bg-primary lg:rounded-l-4xl"></div>
             <div className="relative flex h-[450px] lg:h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)] shadow-md">
-              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0 group">
+              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="relative mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">
                   Mobile friendly
-                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:max-md:w-0 group-hover:lg:w-32"></span>
                 </p>
                 <p className="relative mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
                   {`All our designs are incredibily responsive to screen sizes, whether you're viewing on the web or mobile, our sites look just right. Try resizing.`}
@@ -40,10 +39,9 @@ const ServicesPage = () => {
           <div className="group relative max-lg:row-start-1 rounded-lg max-lg:rounded-t-4xl transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
             <div className="absolute inset-px rounded-lg bg-primary max-lg:rounded-t-4xl"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-              <div className="px-8 pt-8 sm:px-10 sm:pt-10 group">
+              <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="relative mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">
                   Performance
-                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:max-md:w-0 group-hover:lg:w-28"></span>
                 </p>
                 <p className="relative mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
                   Our sites load FAST, so everyone can access and view your
@@ -67,10 +65,9 @@ const ServicesPage = () => {
           <div className="group relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 rounded-lg transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
             <div className="absolute inset-px rounded-lg bg-primary"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-              <div className="px-8 pt-8 sm:px-10 sm:pt-10 group">
+              <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="relative mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">
                   Maintenance & Hosting
-                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:max-md:w-0 lg:group-hover:w-50"></span>
                 </p>
                 <p className="relative mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
                   {`We can take care of hosting your site and maintenance, so everything "just works", and you can focus on growing your business. No worrying about SSL Certificates, downtime, or security.`}
@@ -93,10 +90,9 @@ const ServicesPage = () => {
           <div className="group relative lg:row-span-2 rounded-lg max-lg:rounded-b-4xl lg:rounded-r-4xl transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
             <div className="absolute inset-px rounded-lg bg-primary max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
             <div className="relative flex h-[450px] lg:h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0 group">
+              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="relative mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">
                   Modern Designs
-                  <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-accent transition-all duration-300 group-hover:max-md:w-0 group-hover:lg:w-35"></span>
                 </p>
                 <p className="relative mt-2 max-w-lg text-pretty text-sm/6 text-gray-600 max-lg:text-center">
                   {`We're always keeping up to date on the latest design trends - so your site looks sleek and stylish.`}
