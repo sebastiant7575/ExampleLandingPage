@@ -1,6 +1,8 @@
+import { FadeIn } from "../animations/FadeIn";
+
 const HeroPage = () => {
   return (
-    <div
+    <FadeIn
       id="hero"
       className="
         relative 
@@ -21,7 +23,7 @@ const HeroPage = () => {
         <div className="mx-auto max-w-2xl py-8">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm/6 text-black ring-1 ring-black/30 hover:ring-black/70">
-              Announcing our latest designs.&nbsp;
+              View our latest designs.&nbsp;
               <a href="#second" className="font-semibold text-accent-light">
                 <span aria-hidden="true" className="absolute inset-0"></span>
                 Read more&nbsp;
@@ -35,7 +37,7 @@ const HeroPage = () => {
               <span className="text-accent underline font-bold">design</span>{" "}
               <span className="">your</span> online business
             </h1>
-            <p className="mt-8 text-lg font-medium text-pretty text-gray-600 sm:text-xl/8">
+            <p className="mt-8 text-lg text-pretty text-gray-600 sm:text-xl/8">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
             </p>
@@ -57,7 +59,7 @@ const HeroPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 };
 

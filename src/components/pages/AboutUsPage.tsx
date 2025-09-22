@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FadeIn } from "../animations/FadeIn";
 
 const AboutUsPage = () => {
   return (
@@ -6,7 +7,10 @@ const AboutUsPage = () => {
       id="about"
       className="min-h-[50vh] py-12 px-12 grid gap-12 lg:grid-cols-2 bg-primary text-black"
     >
-      <div className="flex flex-col items-center md:items-start justify-center ">
+      <FadeIn
+        delay={0.5}
+        className="flex flex-col items-center md:items-start justify-center "
+      >
         <h2 className="font-bold text-balance">About Us</h2>
         <h3 className="mt-4 font-light">
           <i>What we do and Why</i>
@@ -20,8 +24,8 @@ const AboutUsPage = () => {
           A <i>passion</i> for bringing ideas to life, from <b>front-end</b>{" "}
           designs to <b>full-stack</b> <i>experiences</i>.
         </p>
-      </div>
-      <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] py-12">
+      </FadeIn>
+      <div className="group rounded-4xl relative w-full h-[300px] sm:h-[400px] md:h-[500px] py-12 hover-lift">
         <Image
           src="/developers.jpg"
           alt="Performance"

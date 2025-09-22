@@ -1,8 +1,10 @@
 import Image from "next/image";
+import { FadeIn } from "../animations/FadeIn";
 
 const ServicesPage = () => {
   return (
-    <div
+    <FadeIn
+      delay={1}
       id="services"
       className="flex flex-col items-center justify-center bg-accent text-white"
     >
@@ -12,7 +14,7 @@ const ServicesPage = () => {
           product
         </p>
         <div className="mt-16 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-          <div className="group relative lg:row-span-2 rounded-lg lg:rounded-l-4xl transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
+          <div className="group relative lg:row-span-2 rounded-lg lg:rounded-l-4xl transition hover-lift">
             <div className="absolute inset-px rounded-lg bg-primary lg:rounded-l-4xl"></div>
             <div className="relative flex h-[450px] lg:h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)] shadow-md">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
@@ -36,7 +38,7 @@ const ServicesPage = () => {
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-white/15 lg:rounded-l-4xl"></div>
           </div>
-          <div className="group relative max-lg:row-start-1 rounded-lg max-lg:rounded-t-4xl transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
+          <div className="group relative max-lg:row-start-1 rounded-lg max-lg:rounded-t-4xl hover-lift">
             <div className="absolute inset-px rounded-lg bg-primary max-lg:rounded-t-4xl"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -62,7 +64,7 @@ const ServicesPage = () => {
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-t-4xl"></div>
           </div>
-          <div className="group relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 rounded-lg transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
+          <div className="group relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 rounded-lg hover-lift">
             <div className="absolute inset-px rounded-lg bg-primary"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -87,7 +89,7 @@ const ServicesPage = () => {
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-white/15"></div>
           </div>
-          <div className="group relative lg:row-span-2 rounded-lg max-lg:rounded-b-4xl lg:rounded-r-4xl transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl">
+          <div className="group relative lg:row-span-2 rounded-lg max-lg:rounded-b-4xl lg:rounded-r-4xl hover-lift">
             <div className="absolute inset-px rounded-lg bg-primary max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
             <div className="relative flex h-[450px] lg:h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
@@ -113,7 +115,7 @@ const ServicesPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 };
 
