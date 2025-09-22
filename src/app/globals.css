@@ -26,3 +26,7 @@ body {
   /* indigo-400 */
   --color-accent-light: oklch(67.3% 0.182 276.935);
 }
+
+.hover-lift {
+  @apply transition duration-300 ease-out transform-gpu hover:-translate-y-2 hover:shadow-2xl;
+}
