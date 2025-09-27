@@ -4,7 +4,7 @@ import { FadeIn } from "../animations/FadeIn";
 const ServiceHighlightsPage = () => {
   return (
     <div id="service-highlights" className=" bg-primary text-black px-12 py-12">
-      <FadeIn className="flex flex-col items-center justify-center">
+      <FadeIn delay={0.5} className="flex flex-col items-center justify-center">
         <h1 className="font-bold text-balance">
           Why Choose <span className="text-accent underline">Us</span>?
         </h1>
@@ -14,7 +14,10 @@ const ServiceHighlightsPage = () => {
             experience at your fingertips.`}
         </h3>
       </FadeIn>
-      <FadeIn className="grid lg:grid-cols-3 gap-32 mt-16">
+      <FadeIn
+        delay={0.5}
+        className="grid lg:grid-cols-3 gap-12 lg:gap-32 mt-16"
+      >
         {/* Card 1 */}
         <div className="flex flex-col  items-start justify-start border-1 shadow-xl border-gray-400 rounded-xl p-6 hover-lift">
           <div className="flex w-full items-center justify-between">

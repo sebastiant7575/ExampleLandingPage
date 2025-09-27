@@ -37,7 +37,7 @@ const HeroPage = () => {
               <span className="text-accent underline font-bold">design</span>{" "}
               <span className="">your</span> online business
             </h1>
-            <p className="mt-8 text-lg text-pretty text-gray-600 sm:text-xl/8">
+            <p className="mt-8 text-lg font-light text-pretty text-gray-600 sm:text-xl/8">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
             </p>

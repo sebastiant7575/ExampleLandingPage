@@ -1,4 +1,6 @@
+import { FadeIn } from "@/components/animations/FadeIn";
 import AboutUsPage from "@/components/pages/AboutUsPage";
+import Footer from "@/components/pages/Footer";
 import HeroPage from "@/components/pages/HeroPage";
 import ServiceHighlightsPage from "@/components/pages/ServiceHighlightsPage";
 import ServicesPage from "@/components/pages/ServicesPage";
@@ -31,39 +33,13 @@ export default function Home() {
       {/* Pricing / Buy / Contact Us (Call to Action) */}
       <div
         id="pricing"
-        className="min-h-screen flex flex-col items-center justify-center bg-accent text-white"
+        className="min-h-screen flex flex-col items-center justify-center bg-primary"
       >
         <h2 className="font-bold text-balance">Pricing</h2>
         <p className="mt-2 text-pretty">Cards left to right</p>
       </div>
-      {/* FAQ */}
-      {/* <div id="fourth" className="h-screen flex flex-col items-center justify-center bg-primary text-white">
-        <h2 className="font-bold text-balance">Footer</h2>
-        <p className="mt-2 text-pretty">Scroll Up</p>
-      </div> */}
-      {/* Reviews */}
-      {/* <div id="fourth" className="h-screen flex flex-col items-center justify-center bg-accent text-white">
-        <h2 className="font-bold text-balance">Footer</h2>
-        <p className="mt-2 text-pretty">Scroll Up</p>
-      </div> */}
-      {/* Call To Action */}
-      {/* <div id="seventh" className="h-screen flex flex-col items-center justify-center bg-primary text-white">
-        <h2 className="font-bold text-balance">Footer</h2>
-        <p className="mt-2 text-pretty">Scroll Up</p>
-      </div>          */}
-      {/* Pricing Tiers*/}
-      {/* <div id="fourth" className="h-screen flex flex-col items-center justify-center bg-primary text-white">
-        <h2 className="font-bold text-balance">Footer</h2>
-        <p className="mt-2 text-pretty">Scroll Up</p>
-      </div> */}
       {/* Footer */}
-      <div
-        id="footer"
-        className="h-screen flex flex-col items-center justify-center bg-primary text-white"
-      >
-        <h2 className="font-bold text-balance">Footer</h2>
-        <p className="mt-2 text-pretty">Scroll Up</p>
-      </div>
+      <Footer />
     </div>
   );
 }
