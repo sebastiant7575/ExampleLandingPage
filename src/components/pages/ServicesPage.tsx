@@ -3,12 +3,11 @@ import { FadeIn } from "../animations/FadeIn";
 
 const ServicesPage = () => {
   return (
-    <FadeIn
-      delay={1}
+    <div
       id="services"
       className="flex flex-col items-center justify-center bg-accent text-white"
     >
-      <div className="px-12 pb-12 py-12">
+      <FadeIn delay={0.5} className="px-12 pb-12 py-12">
         <p className="mx-auto mt-8 lg:mt-0 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
           <span className="underline">Everything</span> you need to market your
           product
@@ -21,7 +20,7 @@ const ServicesPage = () => {
                 <p className="relative mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">
                   Mobile friendly
                 </p>
-                <p className="relative mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
+                <p className="relative font-light mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
                   {`All our designs are incredibily responsive to screen sizes, whether you're viewing on the web or mobile, our sites look just right. Try resizing.`}
                 </p>
               </div>
@@ -45,7 +44,7 @@ const ServicesPage = () => {
                 <p className="relative mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">
                   Performance
                 </p>
-                <p className="relative mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
+                <p className="relative mt-2 font-light max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
                   Our sites load FAST, so everyone can access and view your
                   product instantly.
                 </p>
@@ -71,7 +70,7 @@ const ServicesPage = () => {
                 <p className="relative mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">
                   Maintenance & Hosting
                 </p>
-                <p className="relative mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
+                <p className="relative font-light mt-2 max-w-lg text-sm/6 text-pretty text-gray-600 max-lg:text-center">
                   {`We can take care of hosting your site and maintenance, so everything "just works", and you can focus on growing your business. No worrying about SSL Certificates, downtime, or security.`}
                 </p>
               </div>
@@ -96,7 +95,7 @@ const ServicesPage = () => {
                 <p className="relative mt-2 text-xl font-medium tracking-tight text-black max-lg:text-center">
                   Modern Designs
                 </p>
-                <p className="relative mt-2 max-w-lg text-pretty text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="relative font-light mt-2 max-w-lg text-pretty text-sm/6 text-gray-600 max-lg:text-center">
                   {`We're always keeping up to date on the latest design trends - so your site looks sleek and stylish.`}
                 </p>
               </div>
@@ -114,8 +113,8 @@ const ServicesPage = () => {
             <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
           </div>
         </div>
-      </div>
-    </FadeIn>
+      </FadeIn>
+    </div>
   );
 };
 
