@@ -1,6 +1,6 @@
-import { FadeIn } from "@/components/animations/FadeIn";
 import AboutUsPage from "@/components/pages/AboutUsPage";
 import Footer from "@/components/pages/Footer";
+import Gallery from "@/components/pages/GalleryPage";
 import HeroPage from "@/components/pages/HeroPage";
 import ServiceHighlightsPage from "@/components/pages/ServiceHighlightsPage";
 import ServicesPage from "@/components/pages/ServicesPage";
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-primary">
       {/* Hero Page*/}
       <HeroPage />
       {/* Services */}
@@ -23,13 +23,8 @@ export default function Home() {
       {/* Service Highlights / Why Choose Us */}
       <ServiceHighlightsPage />
       {/* Gallery wth example sites */}
-      <div
-        id="gallery"
-        className="h-[50vh] flex flex-col items-center justify-center bg-primary text-black"
-      >
-        <h2 className="font-bold text-balance">Gallery</h2>
-        <p className="mt-2 text-pretty">Carousel of sites</p>
-      </div>
+      <Gallery />
+
       {/* Pricing / Buy / Contact Us (Call to Action) */}
       <div
         id="pricing"
