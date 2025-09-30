@@ -30,7 +30,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 -Update mobile menu to be larger and more mobile-friendly
 -Add robot.txt
--Add about us section
--Add shadcn and create a shadcn carousel for gallery images
--Create footer
--Delete rest of pages and finish navigation
+-Fix navigation
+-Turn button into component

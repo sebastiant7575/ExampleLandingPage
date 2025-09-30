@@ -27,7 +27,7 @@ const Gallery = () => {
       id="gallery"
       className="flex flex-col items-center justify-center bg-primary text-black p-12"
     >
-      <h2 className="font-bold">{`What we've made...`}</h2>
+      <h1 className="font-bold">{`What we've made...`}</h1>
       <Carousel
         plugins={[
           Autoplay({
