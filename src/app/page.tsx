@@ -2,6 +2,7 @@ import AboutUsPage from "@/components/pages/AboutUsPage";
 import Footer from "@/components/pages/Footer";
 import Gallery from "@/components/pages/GalleryPage";
 import HeroPage from "@/components/pages/HeroPage";
+import Pricing from "@/components/pages/Pricing";
 import ServiceHighlightsPage from "@/components/pages/ServiceHighlightsPage";
 import ServicesPage from "@/components/pages/ServicesPage";
 import { Metadata } from "next";
@@ -14,26 +15,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="bg-primary">
-      {/* Hero Page*/}
       <HeroPage />
-      {/* Services */}
       <ServicesPage />
-      {/* About Us */}
       <AboutUsPage />
-      {/* Service Highlights / Why Choose Us */}
       <ServiceHighlightsPage />
-      {/* Gallery wth example sites */}
       <Gallery />
-
-      {/* Pricing / Buy / Contact Us (Call to Action) */}
-      <div
-        id="pricing"
-        className="min-h-screen flex flex-col items-center justify-center bg-primary"
-      >
-        <h2 className="font-bold text-balance">Pricing</h2>
-        <p className="mt-2 text-pretty">Cards left to right</p>
-      </div>
-      {/* Footer */}
+      <Pricing />
       <Footer />
     </div>
   );
