@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import { FadeIn } from "../animations/FadeIn";
 
 interface CardItemProps {
   checked?: boolean;
@@ -23,9 +24,9 @@ const CardItem = ({ checked, children }: CardItemProps) => {
   );
 };
 
-const Pricing = () => {
+const PricingPage = () => {
   return (
-    <div id="pricing" className="p-12">
+    <FadeIn delay={0.5} id="pricing" className="p-12">
       <div className="flex flex-col justify-center items-center">
         <h1 className="font-bold text-balance">Pricing</h1>
       </div>
@@ -38,8 +39,8 @@ const Pricing = () => {
           </h3>
           <p className="font-light mt-2 text-pretty text-gray-600">
             Pay <i>up front</i> and then as you go. This is <i>perfect</i> for
-            people who <i>aren't</i> going to update their site very often and
-            want something <i>simple</i>.
+            people who <i>{`aren't`}</i> going to update their site very often
+            and want something <i>simple</i>.
           </p>
           <CardItem checked>{`Domain Name + Hosting`}</CardItem>
           <CardItem checked>{`Unlimited Monthly Users`}</CardItem>
@@ -111,8 +112,8 @@ const Pricing = () => {
           </a>
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 };
 
-export default Pricing;
+export default PricingPage;

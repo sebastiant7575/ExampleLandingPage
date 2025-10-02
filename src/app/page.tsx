@@ -1,8 +1,9 @@
 import AboutUsPage from "@/components/pages/AboutUsPage";
 import Footer from "@/components/pages/Footer";
-import Gallery from "@/components/pages/GalleryPage";
+import GalleryPage from "@/components/pages/GalleryPage";
 import HeroPage from "@/components/pages/HeroPage";
-import Pricing from "@/components/pages/Pricing";
+import PricingPage from "@/components/pages/PricingPage";
+import ProcessPage from "@/components/pages/ProcessPage";
 import ServiceHighlightsPage from "@/components/pages/ServiceHighlightsPage";
 import ServicesPage from "@/components/pages/ServicesPage";
 import { Metadata } from "next";
@@ -18,9 +19,10 @@ export default function Home() {
       <HeroPage />
       <ServicesPage />
       <AboutUsPage />
+      <ProcessPage />
       <ServiceHighlightsPage />
-      <Gallery />
-      <Pricing />
+      <GalleryPage />
+      <PricingPage />
       <Footer />
     </div>
   );

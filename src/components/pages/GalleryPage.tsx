@@ -20,7 +20,7 @@ const sources = [
   "/gallery-website-2.png",
 ];
 
-const Gallery = () => {
+const GalleryPage = () => {
   return (
     <FadeIn
       delay={0.5}
@@ -60,4 +60,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default GalleryPage;
